@@ -8,28 +8,15 @@
 	<script src="js/controllers.js"></script>
 </head>
 <body ng-controller="StubsListCtrl">
-
- <p>Nothing here {{'yet' + '!'}}</p>
-   <ul>
-    <li ng-repeat="phone in stubs">
-      {{phone.name}}
-      <p>{{phone.snippet}}</p>
-    </li>
-  </ul>
-
-
-<div class="container-fluid">
+	<div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Link</a></li>
-              <li><a href="http://twitter.github.io/bootstrap/examples/fluid.html#">Link</a></li>
-              
-            </ul>
+              <li class="nav-header" >Sidebar</li>
+				<li ng-repeat="phone in stubs" > 
+					<a href="http://twitter.github.io/bootstrap/examples/fluid.html#">{{phone.name}}</a></li>
+			</ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
