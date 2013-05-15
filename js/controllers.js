@@ -6,7 +6,7 @@ function StubsListCtrl ($scope, $http) {
 }
 
 function StubsDetCtrl($scope, $routeParams) {
-  $scope.stubId = $routeParams.stupId;
+  $scope.phoneId = $routeParams.phoneId;
 }
 
 function ErrorCtrl($scope) {
