@@ -1,0 +1,11 @@
+.mycss-animation-setup {
+  -webkit-transition:1s linear all;
+  -moz-transition:1s linear all;
+  -o-transition:1s linear all;
+  transition:1s linear all; /* future proof */
+
+  opacity:1;
+}
+.mycss-animation-setup.mycss-animation-start {
+  opacity:0;
+}
