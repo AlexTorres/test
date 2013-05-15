@@ -5,10 +5,13 @@ function StubsListCtrl ($scope, $http) {
 
 }
 
-function StubsDetCtrl($scope, $routeParams) {
-  $scope.stubId = $routeParams.stubId;
+function StubsDetCtrl($scope, $routeParams, $http) {
+  $http.get('stubs/' + $routeParams.stubId + '.json').success(function(data) {
+    $scope.stub = data;
+  });
 }
 
 function ErrorCtrl($scope) {
   $scope = '404';
 }
+

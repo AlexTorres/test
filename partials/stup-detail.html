@@ -2,20 +2,23 @@
 <div class="container-fluid">
       <div class="row-fluid">
 
-        <div class="span9">
-          <div class="hero-unit">
-            <h1> detail view for {{stubId}}</h1>
+          <div class="page-header">
+
+            <h2>{{stub.name}} <small>{{stub.id}}</small></h2>
           </div>
-				</div><!--/row-->
 
-        <div class="span3">
-        	   <a href="#" class="thumbnail">
-      					<img data-src="holder.js/300x200" alt="">
-   					 </a>
-				</div><!--/row-->
-			</div><!--/span-->
-  </div><!--/row-->
-
+			</div>
+   <div class="stub-fluid">
+		<ul class="thumbnails">
+  		<li ng-repeat="img in stub.images">
+  			<a href="#" class="thumbnail">
+    			<img src="{{img}}">
+				</a>
+    		<p>{{img}}</p>
+  		</li>
+		</ul>
+   </div>
+</div> 
 <footer>
 	<p>&copy; Company 2013</p>
 </footer>
