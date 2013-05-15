@@ -4,3 +4,7 @@ function StubsListCtrl ($scope, $http) {
 	});
 
 }
+
+function StubsDetCtrl($scope, $routeParams) {
+  $scope.phoneId = $routeParams.phoneId;
+}
