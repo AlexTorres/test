@@ -8,3 +8,7 @@ function StubsListCtrl ($scope, $http) {
 function StubsDetCtrl($scope, $routeParams) {
   $scope.phoneId = $routeParams.phoneId;
 }
+
+function ErrorCtrl($scope) {
+  $scope = '404';
+}
