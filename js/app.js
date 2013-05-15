@@ -4,7 +4,7 @@ angular.module('stupscataloge', []).
       when('/stups',	{templateUrl: 'partials/stups-list.html',	
       					controller: StubsListCtrl}).
 
-      when('/stups/:phoneId',	{templateUrl: 'partials/stup-detail.html', 
+      when('/stups/:stubId',	{templateUrl: 'partials/stup-detail.html', 
       							controller: StubsDetCtrl}).
       
       when('/404', {templateUrl: 'partials/error.html', controller: ErrorCtrl}).
