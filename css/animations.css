@@ -1,9 +1,9 @@
 .enter-view-setup{
-    -webkit-transition: 0.5s linear all; 
-    -webkit-transition: 0.5s linear all;
-    -moz-transition: 0.5s linear all;
-    -o-transition: 0.5s linear all;
-    transition: 0.5s linear all;
+    -webkit-transition: 0.5s ease-in all; 
+    -webkit-transition: 0.5s ease-in all;
+    -moz-transition: 0.5s ease-in all;
+    -o-transition: 0.5s ease-in all;
+    transition: 0.5s ease-in all;
     position:relative;
     left:100%;
     opacity:0;
