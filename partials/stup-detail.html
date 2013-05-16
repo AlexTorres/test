@@ -1,18 +1,28 @@
 
 <div class="container-fluid"  ng-animate="{enter: 'mycss-animation-setup.mycss-animation-start }">
       <div class="row-fluid">
+        <div class="page-header">
+          <h2>{{stub.name}} <small>{{stub.id}}</small></h2>
+        </div>
+      </div>
 
-          <div class="page-header">
+  <div class="span12">
+    <ul class="thumbnails">
+      <li>
+        <div class="span7 thumbnail">
+          <img src="{{mainImageUrl}}">
+        </div>
+        <p>{{img}}</p>
+      </li>
+    </ul>
 
-            <h2>{{stub.name}} <small>{{stub.id}}</small></h2>
-          </div>
+  </div> 
 
-			</div>
-   <div class="stub-fluid">
+  <div class="stub-fluid">
 		<ul class="thumbnails">
   		<li ng-repeat="img in stub.images">
-  			<a href="#" class="thumbnail">
-    			<img src="{{img}}">
+  			<a ng-click="setImage(img)" class="thumbnail">
+    			<img src="{{img}}" ng-click="setImage(img)">
 				</a>
     		<p>{{img}}</p>
   		</li>
