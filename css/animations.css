@@ -4,8 +4,13 @@
     -moz-transition: 0.5s linear all;
     -o-transition: 0.5s linear all;
     transition: 0.5s linear all;
-    opacity: 0;
+    position:relative;
+    left:100%;
+    opacity:0;
+   
 }
 .enter-view-setup.enter-view-start{
+	left:0;
     opacity: 1;
+  
 }
