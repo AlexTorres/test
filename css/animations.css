@@ -1,11 +1,11 @@
-.mycss-animation-setup {
-  -webkit-transition:1s linear all;
-  -moz-transition:1s linear all;
-  -o-transition:1s linear all;
-  transition:1s linear all; /* future proof */
-
-  opacity:1;
+.enter-view-setup{
+    -webkit-transition: 2s linear all; 
+    -webkit-transition: 2s linear all;
+    -moz-transition: 2s linear all;
+    -o-transition: 2s linear all;
+    transition: 2s linear all;
+    opacity: 0;
 }
-.mycss-animation-setup.mycss-animation-start {
-  opacity:0;
+.enter-view-setup.enter-view-start{
+    opacity: 1;
 }
